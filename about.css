@@ -1,0 +1,165 @@
+:root {
+  --animate-speed: 2s;
+  --menu-speed: 0.75s;
+  --primary-color: rgba(51, 47, 121, 0.45);
+  --primary-colormain: rgba(42,39,76,0.65);
+  --secondary-color: rgba(187,67,46,0.9);
+  --overlay-color: rgba(42,39,76,0.95);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Quattrocento', serif;
+  line-height: 1.4;
+  color: #000;
+  background: #2a274c;
+}  
+h1{
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  z-index: 2;
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* text animation */
+h1.style{
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  z-index: 1;
+  transform: translateY(-700px);
+  animation: heading var(--animate-speed) forwards ease-out;
+}
+/* keyframe */
+@keyframes heading{
+  to{
+      transform:translateY(0);
+  }
+}
+
+p.style2{
+  width: 100%;
+  line-height: 1.4rem;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 20px 20px;
+  z-index: 1;
+  color: #000;
+  transform: translateY(-1400px);
+  animation: texting var(--animate-speed) forwards ease-out 1.5s;
+}
+
+@keyframes texting{
+  to{
+      transform:translateY(0);
+  }
+}
+
+/* span color */
+.text-primary{
+  color: #bb402e;
+}
+
+p{
+  line-height: 1.4rem;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px 20px;
+  z-index: 2;
+  color: #fff;
+  width: 400px;
+}
+
+/* btn */
+.btn{
+  width: 180px;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0 10px;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  background: #2a274c;
+  color: #fff;
+}
+
+.btn-primary{
+  width: 180px;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover{
+  background: #bb402e;
+  color: #fff;
+}
+
+
+
+/* logo */
+.header1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;  
+  position: fixed;
+  top: 0px;
+  padding: 0 20px;
+  z-index: 1;
+}  
+
+.header1 img{
+  width: 150px;
+  height: 40px;
+}  
+
+/* top box */
+#main-header{
+  background: var(--primary-colormain);
+  position: relative;
+  height: 30vh;
+}  
+
+#main-header:before{
+  content: '';
+  background: url('/images/milk.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}  
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100%;
+}  
+
+
