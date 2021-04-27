@@ -1,298 +1,311 @@
 :root {
-  --page-1-color: url('/images/grandma\ bg.jpg') no-repeat center center/cover;
-  --page-2-color: url('/images/pineapple.jpg') no-repeat center center/cover;
-  --page-3-color: url('images/tea\ leaves.jpg') no-repeat center center/cover;
-  --page-4-color: url('images/milk.jpg') no-repeat center center/cover;
-  --page-5-color: url('/images/pineapple.jpg') no-repeat center center/cover;
-  --animate-speed: 2s;
-  --menu-speed: 0.75s;
-  --primary-color: rgba(84, 82, 111, 0.65);
-  --primary-colormain: rgba(42,39,76,0.25);
-  --secondary-color: rgba(187,67,46,0.9);
-  --overlay-color: rgba(42,39,76,0.95);
+    --page-1-color: url('/images/grandma\ bg.jpg') no-repeat center center/cover;
+    --page-2-color: url('/images/pineapple.jpg') no-repeat center center/cover;
+    --page-3-color: url('images/tea\ leaves.jpg') no-repeat center center/cover;
+    --page-4-color: url('images/milk.jpg') no-repeat center center/cover;
+    --page-5-color: url('/images/pineapple.jpg') no-repeat center center/cover;
+    --animate-speed: 2s;
+    --menu-speed: 0.75s;
+    --primary-color: rgba(84, 82, 111, 0.65);
+    --primary-colormain: rgba(42, 39, 76, 0.25);
+    --secondary-color: rgba(187, 67, 46, 0.9);
+    --overlay-color: rgba(42, 39, 76, 0.95);
 }
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-  font-family: 'Quattrocento', serif;
-  line-height: 1.4;
-  color: #000;
-  overflow: hidden;
+body {
+    font-family: 'Quattrocento', serif;
+    line-height: 1.4;
+    color: #000;
+    /* overflow: hidden; */
 }
 
 /* header */
-.header1{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 70px;  
-  position: fixed;
-  top: 0px;
-  padding: 0 20px;
-  z-index: 1;
+.header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    padding: 0 20px;
+    z-index: 1;
 }
 
-.header1 img{
-  width: 150px;
-  height: 40px;
+.header1 img {
+    width: 150px;
+    height: 40px;
 }
 
-.logo-hover{
-  transition: all 0.5s ease-in-out;
+.logo-hover {
+    transition: all 0.5s ease-in-out;
 }
 
 /* first page & Text*/
-.box-1{
-  width: 100%;
-  max-width: 960px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 0;
-  background: #2a274c;
-  padding:20px;
+.box-1 {
+    width: 100%;
+    max-width: 960px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    background: #2a274c;
+    padding: 20px;
 }
 
-h1{
-  font-size: 18px;
-  font-weight: 500;
-  z-index: 2;
-  color: #fff;
-  padding: 10px 0;
+h1 {
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 2;
+    color: #fff;
+    padding: 10px 0;
 }
 
-h1.text-secondary{
-  font-size: 24px;
-  color: #fff;
-  font-weight: 700;
-  z-index: 1;
+h1.text-secondary {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    z-index: 1;
 }
 
-h2{
-  font-size: 14px;
-  font-weight: 500;
-  z-index: 2;
-  color: #fff;
-  padding: 5px 0;
+h2 {
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 2;
+    color: #fff;
+    padding: 5px 0;
 }
 
 /* text animation */
-h1.style{
-  font-size: 32px;
-  letter-spacing: 2px;
-  font-weight: 700;
-  color: #fff;
-  z-index: 1;
-  transform: translateY(-700px);
-  animation: heading var(--animate-speed) forwards ease-out;
-  margin-bottom:20px;
-  margin-top:20px;
+h1.style {
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #fff;
+    z-index: 1;
+    transform: translateY(-700px);
+    animation: heading var(--animate-speed) forwards ease-out;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 /* keyframe */
-@keyframes heading{
-  to{
-      transform:translateY(0);
-  }
+@keyframes heading {
+    to {
+        transform: translateY(0);
+    }
 }
 
-p.style2{
-  width: 100%;
-  line-height: 1.4rem;
-  font-size: 14px;
-  font-weight: 700;
-  padding: 20px 20px;
-  z-index: 1;
-  color: #fff;
-  transform: translateY(-1400px);
-  animation: texting var(--animate-speed) forwards ease-out 1.5s;
-  letter-spacing: 2px;
-  margin-bottom:20px;
+p.style2 {
+    width: 100%;
+    line-height: 1.4rem;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 20px 20px;
+    z-index: 1;
+    color: #fff;
+    transform: translateY(-1400px);
+    animation: texting var(--animate-speed) forwards ease-out 1.5s;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 }
 
-@keyframes texting{
-  to{
-      transform:translateY(0);
-  }
+@keyframes texting {
+    to {
+        transform: translateY(0);
+    }
 }
 
 /* span color */
-.text-primary{
-  color: rgb(255, 98, 78);
-  z-index: 1;
+.text-primary {
+    color: rgb(255, 98, 78);
+    z-index: 1;
 }
 
-p{
-  line-height: 1.4rem;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 0px 20px;
-  z-index: 2;
-  color: #fff;
-  width: 400px;
+p {
+    line-height: 1.4rem;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0px 20px;
+    z-index: 2;
+    color: #fff;
+    width: 400px;
 }
 
 /* btn */
-.btn{
-  width: 180px;
-  display: inline-block;
-  padding: 1rem 2rem;
-  margin: 0px 0px -20px 0;
-  background: #fff;
-  color: #333;
-  text-decoration: none;
-  border: none;
-  margin-top: 1rem;
-  font-size: 14px;
-  font-weight: 700;
-  transition: all 0.3s ease-in-out;
-  border-radius: 5px;
-  z-index: 2;
+.btn {
+    width: 180px;
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 0px 0px -20px 0;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    border: none;
+    margin-top: 1rem;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    z-index: 2;
 }
 
-.btn:hover{
-  background: #bb402e;
-  color: #fff;
+.btn:hover {
+    background: #bb402e;
+    color: #fff;
 }
 
-.btn-primary{
-  width: 180px;
-  display: inline-block;
-  padding: 1rem 2rem;
-  background: #fff;
-  color: #333;
-  text-decoration: none;
-  border: none;
-  margin-top: 1rem;
-  font-size: 14px;
-  font-weight: 700;
-  transition: all 0.3s ease-in-out;
+.btn-primary {
+    width: 180px;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    border: none;
+    margin-top: 1rem;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
 }
-.btn-primary:hover{
-  background: #bb402e;
-  color: #fff;
+.btn-primary:hover {
+    background: #bb402e;
+    color: #fff;
 }
 /* menu pages flexbox*/
-.row{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  margin: 0px 10px;
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 0px 10px;
 }
 
-.column{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0px 10px; 
-  padding: 10px 0px;
-  width: 250px;
-  height: 300px;
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px 10px;
+    padding: 10px 0px;
+    width: 250px;
+    height: 300px;
 }
 /* menu pages */
-.font-bg{
-  background-color: rgba(78, 78, 80, 0.5);
-  z-index: 1;
-  width: 250px;
+.font-bg {
+    background-color: rgba(78, 78, 80, 0.5);
+    z-index: 1;
+    width: 250px;
 }
 
-.font-bg2{
-  background-color: rgba(78, 78, 80, 0.5);
-  z-index: 1;
+.font-bg-2 {
+    background-color: rgba(78, 78, 80, 0.5);
+    z-index: 1;
+    width: 400px;
+    text-align: center;
 }
 
-.box-pic1{
-  margin-bottom: 20px;
-  background: url('/images/fruit\ tea.jpg') no-repeat center center/cover;
-  background-position: 50% 80%;
-  width: 250px;
-  height: 300px;
-  border: #fefaf5 3px solid;
-  border-radius: 10px;
+.box-pic1 {
+    margin-bottom: 20px;
+    background-position: 50% 80%;
+    width: 250px;
+    height: 300px;
+    border: #fefaf5 3px solid;
+    border-radius: 10px;
 }
-.box-pic2{
-  margin: 20px 0;
-  background: url('/yifang\ pictures/original tea/black tea.png') no-repeat center center/cover;
-  width: 400px;
-  height: 500px;
-  border: #fefaf5 3px solid;
-  border-radius: 10px;
+.pic1 {
+    background: url('/yifang pictures/fruit tea/passion\ fruit\ green\ tea.jpg') no-repeat center center/cover;
 }
-.box-pic3{
-  margin: 20px 0;
-  background: url('/yifang\ pictures/milk tea/brown sugar.png') no-repeat center center/cover;
-  width: 400px;
-  height: 500px;
-  border: #fefaf5 3px solid;
-  border-radius: 10px;
+.box-pic1-2 {
+    background: url('/yifang pictures/fruit tea/柳丁水果茶\(情境照\)-orange\ fruit\ tea\(situation\ images\).jpg')
+        no-repeat center center/cover;
 }
-.box-pic4{
-  margin: 20px 0;
-  background: url('/yifang\ pictures/smoothie/mango pomelo sago.jpg') no-repeat center center/cover;
-  width: 400px;
-  height: 500px;
-  border: #fefaf5 3px solid;
-  border-radius: 10px;
+.box-pic2 {
+    margin: 20px 0;
+    background: url('/yifang\ pictures/original tea/black tea.png') no-repeat center center/cover;
+    width: 400px;
+    height: 500px;
+    border: #fefaf5 3px solid;
+    border-radius: 10px;
+}
+.box-pic3 {
+    margin: 20px 0;
+    background: url('/yifang\ pictures/milk tea/brown sugar.png') no-repeat center center/cover;
+    width: 400px;
+    height: 500px;
+    border: #fefaf5 3px solid;
+    border-radius: 10px;
+}
+.box-pic4 {
+    margin: 20px 0;
+    background: url('/yifang\ pictures/smoothie/mango pomelo sago.jpg') no-repeat center center/cover;
+    width: 400px;
+    height: 500px;
+    border: #fefaf5 3px solid;
+    border-radius: 10px;
 }
 /* pages color */
-#page-1 {  
-  background:  url('/images/grandma\ bg.jpg') no-repeat center center/cover; 
-  height: 100vh;
-  color: #fff;
-  position: relative;
-
- }
-#page-1:before{
-  content: '';
-  background-color:#000000;
-  opacity: 0.2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+#page-1 {
+    background: url('/images/grandma\ bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+#page-1:before {
+    content: '';
+    background-color: #000000;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 #page-2 {
-  background: var(--primary-colormain);
-  height: 100vh;
-  color: #fff;
-  position: relative;
- }
-#page-2:before{
-  content: '';
-  background: var(--page-2-color) ;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
- z-index: -1;
+    background: var(--primary-colormain);
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+#page-2:before {
+    content: '';
+    background: var(--page-2-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 
-#page-3 {background: var(--page-3-color) }
+#page-3 {
+    background: var(--page-3-color);
+}
 
-#page-4 {background: var(--page-4-color) }
+#page-4 {
+    background: var(--page-4-color);
+}
 
-#page-5 {background: var(--page-5-color) }
+#page-5 {
+    background: var(--page-5-color);
+}
 
 /* first page */
-.page{
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px 0;
+.page {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
 }
